@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Baro: Delivery clarity for engineering teams</title>
+<meta name="description" content="Baro shows what needs attention right now, whether you'll hit the sprint, and whether your team is getting better. Request early access.">
+<meta property="og:title" content="Baro: Delivery clarity for engineering teams">
+<meta property="og:description" content="What needs attention now. Will we hit the sprint. Are we improving. Request early access to Baro.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/mock-live.webp">
+<meta name="theme-color" content="#0b0d14">
+<link rel="icon" href="assets/baro-mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top" aria-label="Baro home"><img src="assets/baro-mark.svg" alt="" width="34" height="28"><span>Baro</span></a>
+    <nav aria-label="Primary">
+      <a href="#live">Live</a>
+      <a href="#sprint">Sprint</a>
+      <a href="#health">Team health</a>
+      <a class="btn btn-sm" href="#early-access">Get early access</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero wrap">
+    <p class="eyebrow">Early access is open</p>
+    <h1>Know where your team stands, <span class="grad">without the status meeting.</span></h1>
+    <p class="lede">Baro reads your Jira and GitHub activity and tells you three things: what needs attention right now, whether you'll hit the sprint, and whether the team is actually getting better.</p>
+
+    <form class="signup" data-signup novalidate>
+      <label class="sr" for="email-hero">Work email</label>
+      <input id="email-hero" name="email" type="email" placeholder="you@company.com" autocomplete="email" required>
+      <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button class="btn" type="submit">Request early access</button>
+      <p class="form-msg" role="status" aria-live="polite"></p>
+    </form>
+    <p class="fine">Free while we're in early access. No credit card.</p>
+
+    <figure class="shot hero-shot">
+      <img src="assets/mock-live.webp" alt="Baro Live view: open blockers, stuck tickets, PRs waiting for review and WIP per person" width="2000" height="1722" fetchpriority="high">
+    </figure>
+  </section>
+
+  <section class="wrap strip" aria-label="What Baro connects to">
+    <p>Plugs into the tools your team already lives in</p>
+    <ul><li>Jira</li><li>GitHub</li><li>Slack</li></ul>
+  </section>
+
+  <section class="feature wrap" id="live">
+    <div class="copy">
+      <p class="eyebrow">Live</p>
+      <h2>What needs attention right now</h2>
+      <p>Open blockers, tickets that stopped moving, PRs sitting in review and people over their WIP limit, all on one screen. Each refresh tells you what changed since you last looked.</p>
+      <ul class="ticks">
+        <li>Blockers caught from flags, statuses and labels</li>
+        <li>Stuck and reopened tickets surfaced before standup</li>
+        <li>WIP shown to spot overload, never to rank people</li>
+      </ul>
+    </div>
+    <figure class="shot"><img src="assets/mock-live.webp" alt="Baro Live view" width="2000" height="1722" loading="lazy"></figure>
+  </section>
+
+  <section class="feature flip wrap" id="sprint">
+    <div class="copy">
+      <p class="eyebrow">Sprint</p>
+      <h2>Will we hit the sprint?</h2>
+      <p>Burndown against your last sprint's pace, scope that crept in mid-sprint, carryover and six sprints of velocity. You get an honest read on risk while there's still time to act.</p>
+      <ul class="ticks">
+        <li>Clear at-risk signal with the reasons behind it</li>
+        <li>Late scope additions flagged as they happen</li>
+        <li>Commitment checked against real velocity</li>
+      </ul>
+    </div>
+    <figure class="shot"><img src="assets/mock-sprint.webp" alt="Baro Sprint view: burndown, scope change, carryover and velocity" width="2000" height="1500" loading="lazy"></figure>
+  </section>
+
+  <section class="feature wrap" id="health">
+    <div class="copy">
+      <p class="eyebrow">Team health</p>
+      <h2>Are we improving over time?</h2>
+      <p>Set your own bar, then see flow, delivery predictability, silos and refinement hygiene measured against it over six months.</p>
+      <ul class="ticks">
+        <li>Cycle time, review time and rework in one trend view</li>
+        <li>Baselines you define and revisit</li>
+        <li>Team-level signals only. Baro never ranks individuals.</li>
+      </ul>
+    </div>
+    <figure class="shot"><img src="assets/mock-team-health.webp" alt="Baro Team health view: flow, delivery and investment, silos and refinement" width="2000" height="1875" loading="lazy"></figure>
+  </section>
+
+  <section class="wrap principles">
+    <h2>Built to help teams, not to watch them</h2>
+    <div class="cards">
+      <article><h3>Signals, not scorecards</h3><p>Everything is team-level. No leaderboards, no individual rankings.</p></article>
+      <article><h3>Zero extra tickets</h3><p>Baro works from activity you already create. Nobody fills in another form.</p></article>
+      <article><h3>Honest by default</h3><p>When something isn't measured yet, Baro says so instead of guessing.</p></article>
+    </div>
+  </section>
+
+  <section class="cta wrap" id="early-access">
+    <img src="assets/baro-mark.svg" alt="" width="64" height="53">
+    <h2>Get early access to Baro</h2>
+    <p>Tell us where to reach you. We're letting teams in a few at a time and we'll be in touch soon.</p>
+    <form class="signup" data-signup novalidate>
+      <label class="sr" for="email-cta">Work email</label>
+      <input id="email-cta" name="email" type="email" placeholder="you@company.com" autocomplete="email" required>
+      <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button class="btn" type="submit">Request early access</button>
+      <p class="form-msg" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="wrap foot">
+  <a class="brand" href="#top"><img src="assets/baro-mark.svg" alt="" width="26" height="22"><span>Baro</span></a>
+  <p>&copy; <span id="yr">2026</span> Baro. Questions? <a href="mailto:connect@altevant.com">connect@altevant.com</a></p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
