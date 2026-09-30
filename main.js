@@ -31,10 +31,15 @@ document.querySelectorAll("[data-signup]").forEach((form) => {
           source: location.href,
         }),
       });
-      if (!res.ok) throw new Error(res.status);
+      let body = {};
+      try { body = await res.json(); } catch (_) {}
+      if (!res.ok || body.success === "false" || body.success === false) {
+        throw new Error(body.message || "HTTP " + res.status);
+      }
       form.reset();
       say("You're on the list. We'll be in touch soon.", "ok");
     } catch (err) {
+      console.error("Sign-up failed:", err);
       say("Something went wrong. Please email connect@altevant.com instead.", "err");
     } finally {
       btn.disabled = false;
