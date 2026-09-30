@@ -21,6 +21,3 @@ The form posts to FormSubmit, which forwards each request to connect@altevant.co
 The first submission sends an activation email to that address; click the link in it once.
 To swap providers, change `ENDPOINT` in `main.js`.
 
-## TODO
-
-- Replace `assets/baro-mark.svg` (a hand-drawn approximation) with the official logo file.
