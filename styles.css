@@ -78,3 +78,32 @@ h3{margin:0 0 6px;font-size:18px}
   .hero{padding-top:56px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+
+/* Hero flow: four connected steps */
+.hero .lede{margin-bottom:0}
+.flow{list-style:none;margin:56px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:56px;text-align:left;counter-reset:step}
+.node{position:relative;counter-increment:step;background:linear-gradient(180deg,color-mix(in srgb,var(--a) 7%,var(--panel)),var(--panel) 60%);border:1px solid var(--line);border-top:2px solid var(--a);border-radius:var(--r);padding:22px 22px 26px;transition:transform .2s,box-shadow .2s}
+.node:hover{transform:translateY(-3px);box-shadow:0 18px 40px -22px var(--a)}
+.node::before{content:counter(step);display:grid;place-items:center;width:30px;height:30px;margin-bottom:14px;border-radius:50%;background:color-mix(in srgb,var(--a) 20%,transparent);color:var(--a);font-weight:800;font-size:14px}
+.node h3{margin:0 0 8px;font-size:19px;letter-spacing:-.01em}
+.node p{margin:0;color:var(--muted);font-size:15.5px;line-height:1.55}
+.node:last-child{box-shadow:0 0 0 1px color-mix(in srgb,var(--a) 22%,transparent),0 24px 60px -34px var(--a)}
+
+.link{position:absolute;top:50px;left:calc(100% + 4px);width:48px;height:20px;overflow:visible;pointer-events:none}
+.link line{stroke-width:2;stroke-linecap:round;stroke-dasharray:4 6;animation:flow-dash 1s linear infinite}
+.link path{fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.link circle{filter:drop-shadow(0 0 5px currentColor);animation:flow-dot 2.4s ease-in-out infinite}
+.node:nth-child(1) .link circle{color:#5b9be6}
+.node:nth-child(2) .link circle{color:#4fc3c7;animation-delay:.6s}
+.node:nth-child(3) .link circle{color:#e0a83a;animation-delay:1.2s}
+@keyframes flow-dash{to{stroke-dashoffset:-20}}
+@keyframes flow-dot{0%{transform:translateX(0);opacity:0}15%{opacity:1}85%{opacity:1}100%{transform:translateX(40px);opacity:0}}
+
+@media(max-width:900px){
+  .flow{grid-template-columns:1fr;gap:44px}
+  .link{top:calc(100% + 12px);left:calc(50% - 24px);transform:rotate(90deg)}
+}
+@media(prefers-reduced-motion:reduce){
+  .link line,.link circle{animation:none}
+  .node{transition:none}.node:hover{transform:none}
+}

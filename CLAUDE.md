@@ -14,7 +14,7 @@ Open http://localhost:8000. The server must be started from the repo root.
 
 ## Structure
 
-- `index.html` holds all the page content. Sections: hero, Live, Sprint, Team health, principles, closing sign-up, footer.
+- `index.html` holds all the page content. Sections: hero (headline plus the four-step animated flow), Live, Sprint, Team health, principles, closing sign-up, footer.
 - `styles.css` uses CSS variables in `:root` for the palette. Change colors there, not inline.
 - `main.js` handles the sign-up forms (validation, honeypot, submit).
 - `assets/` holds the logo mark (`baro-mark.png`, `favicon.png`) and product mockups (`mock-live.webp`, `mock-sprint.webp`, `mock-team-health.webp`).
