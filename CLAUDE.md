@@ -37,6 +37,13 @@ Both forms post to FormSubmit, which emails each request to connect@altevant.com
 - Baro is team-level only. It never ranks individuals, and copy must not suggest otherwise.
 - Don't claim integrations or features that aren't in the product. Jira, GitHub and Slack are the tools currently named.
 
+## SEO
+
+- Head tags in `index.html` (title, description, canonical, Open Graph, Twitter card, JSON-LD) use absolute URLs on `https://www.raisethebaro.com/`. Keep it that way, since link previews ignore relative paths.
+- The social preview image is `assets/og-image.jpg` (1200x630). If the headline changes, update the image too.
+- `robots.txt` and `sitemap.xml` live at the repo root. Update `lastmod` in the sitemap when the page changes meaningfully, and add any new page to it.
+- Keep exactly one `<h1>`. Don't claim ratings, prices or features in structured data that the product doesn't have.
+
 ## Quality checks before pushing
 
 - The page works at phone width (single column, no horizontal scroll).
