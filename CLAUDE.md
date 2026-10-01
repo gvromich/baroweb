@@ -46,5 +46,5 @@ Both forms post to FormSubmit, which emails each request to connect@altevant.com
 ## Git
 
 - `main` is the source of truth for what gets deployed.
-- Make changes on a branch, and don't push to `main` without being asked.
+- The owner tests on the live site, so merge every finished change to `main` right away, without waiting to be asked. Commit on the working branch, then fast-forward `main` (merge `main` into the branch first if it has moved).
 - Keep commits small, with clear messages.
