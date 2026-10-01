@@ -105,3 +105,19 @@ h3{margin:0 0 6px;font-size:18px}
   .link line,.link circle{animation:none}
   .node{transition:none}.node:hover{transform:none}
 }
+.hero-cta{margin:30px 0 0}
+.hero{padding-bottom:8px}
+.say{padding:48px 0 16px;text-align:center}
+.say .eyebrow,.how .eyebrow{margin-bottom:10px}
+.say h2{font-size:clamp(26px,3.6vw,36px);margin-bottom:34px}
+.say-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;text-align:left}
+.say-card{background:linear-gradient(180deg,color-mix(in srgb,var(--a) 7%,var(--panel)),var(--panel) 65%);border:1px solid var(--line);border-top:2px solid var(--a);border-radius:var(--r);padding:22px 22px 26px}
+.say-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px;flex-wrap:wrap}
+.tag{font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--a)}
+.chip{font-weight:800;font-size:15px;background:color-mix(in srgb,var(--a) 14%,transparent);border-radius:999px;padding:4px 12px;color:var(--text)}
+.chip small{font-weight:500;color:var(--muted);font-size:12.5px;margin-left:4px}
+.say-card p{margin:0;font-size:17px;line-height:1.55;color:var(--text)}
+.say-note{margin:18px 0 0;color:var(--muted);font-size:14px}
+.how{padding:56px 0 8px;text-align:center}
+.how .flow{margin-top:34px}
+@media(max-width:900px){.say-grid{grid-template-columns:1fr}}
