@@ -24,8 +24,9 @@ document.querySelectorAll("[data-signup]").forEach((form) => {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({
+          message: `Someone with email ${email} is interested in the Baro product.`,
           email,
-          _subject: "Baro early access request",
+          _subject: `Baro early access: ${email} is interested`,
           _template: "table",
           _captcha: "false",
           source: location.href,
